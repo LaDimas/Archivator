@@ -2,11 +2,20 @@ package com.javarush.task.task31.task3110;
 
 import com.javarush.task.task31.task3110.exception.WrongZipFileException;
 
+import java.io.File;
 import java.io.IOException;
+
 
 public class Archiver {
     public static void main(String[] args) throws IOException {
-
+//        File file = new File("c:/java/1.zip");
+//        File file1 = new File("c:/app");
+//        ZipFileManager zipFileManager = new ZipFileManager(file.toPath());
+//        try {
+//            zipFileManager.createZip(file1.toPath());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
         Operation operation = null;
         do {
             try {
@@ -19,6 +28,7 @@ public class Archiver {
             }
 
         } while (operation != Operation.EXIT);
+
     }
 
 
